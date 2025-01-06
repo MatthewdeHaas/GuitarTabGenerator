@@ -1,13 +1,13 @@
 ## Guitar Tab Generator
 
 ### Description:
-This application allows one to drag-and-drop a music files and produces professional guitar tablature using [VexFlow's](https://vexflow.com/) notation API.
+This application produces professional guitar tablature using [VexFlow's](https://vexflow.com/) notation API from a music file assumed to be containing guitar music.
 
 ### ROADMAP:
   - **Data Analysis**:
-    - [x] Find a way to parse .wav files in python
+    - [x] Find a way to parse music files in python
     - [x] Figure out how to correctly apply a Fast Fourier Transform (FFT) to an auido file
-    - [ ] Write a peak finding algorithm that extracts the peaks of the FFT (HARD)
+    - [ ] Write a peak finding algorithm that extracts the peaks of the FFT (IN PROGRESS)
     - [ ] Filter overtones while keeping every fundamental pitches (might have something to do with the relative size of the peaks that follow a given peak in the harmoinc series)
     - [x] Map peaks in the FFT to possible positions on the fretboard
     - [ ] Once an algorithm that consistently identifies notes in a snapshot in time, divide the the whole audio file into discrete bins and apply the FFT to all
